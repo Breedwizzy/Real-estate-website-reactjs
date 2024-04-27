@@ -21,10 +21,10 @@ const Navbar = () => {
                     <li><a href='#'>Contact</a></li>
                 </ul>
 
-                <div className="button-container">
+                {/* <div className="button-container">
                     <button className='btn'>Sign Up</button>
                     <button className='btn'>Sign In</button>
-                </div>
+                </div> */}
 
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaRegTimesCircle className='icon' />) : (<HiOutlineMenuAlt4 className='icon' />)}
