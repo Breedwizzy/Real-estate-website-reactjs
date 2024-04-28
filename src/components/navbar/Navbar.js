@@ -1,38 +1,40 @@
-import React, { useState } from 'react'
-import { HiOutlineMenuAlt4 } from 'react-icons/hi'
-import { FaRegTimesCircle } from 'react-icons/fa'
-import { BsFillHouseFill } from 'react-icons/bs'
-import './Navbar.css'
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import './Navbar.css';
+import wakaagentlogo from '../../assets/wakaagentlogo.jpeg';
 
 const Navbar = () => {
+    const [click, setClick] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const [click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
+    const handleClick = () => setClick(!click);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     return (
         <div className='navbar'>
             <div className='container'>
-                <h1><span><BsFillHouseFill />Waka</span>agent</h1>
+                <div className="logo-container">
+                    <img className="logo-img" src={wakaagentlogo} alt="wakaagent logo" />
+                    <h1 className="logo-text"><span>Waka</span>agent</h1>
+                </div>
 
-                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <ul id='nav-elements' className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li><a href='#'>Home</a></li>
                     <li><a href='#'>Search</a></li>
                     <li><a href='#'>About</a></li>
                     <li><a href='#'>Contact</a></li>
                 </ul>
 
-                {/* <div className="button-container">
-                    <button className='btn'>Sign Up</button>
-                    <button className='btn'>Sign In</button>
-                </div> */}
-
-                <div className='hamburger' onClick={handleClick}>
-                    {click ? (<FaRegTimesCircle className='icon' />) : (<HiOutlineMenuAlt4 className='icon' />)}
-
+                <div className={`hamburger ${isMenuOpen ? 'close-menu' : ''}`} onClick={toggleMenu}>
+                    <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="2x" />
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
