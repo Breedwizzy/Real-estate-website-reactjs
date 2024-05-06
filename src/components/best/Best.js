@@ -9,13 +9,13 @@ import './Best.css'
 const Best = () => {
     return (
         <div className='best'>
-            <h1>Find Best Rated Properties</h1>
-            <div>
+            <h1> Shared Properties / Appartments </h1>
+            {/* <div>
                 <p><span className='bold'>All</span></p>
                 <p>Commercial</p>
                 <p>Residential</p>
                 <p>Agricultural</p>
-            </div>
+            </div> */}
             <div className='container'>
                 <img src={Apt1} alt='' />
                 <img src={Apt2} alt='' />

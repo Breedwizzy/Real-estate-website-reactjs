@@ -8,7 +8,7 @@ const Hero = () => {
         <div className='hero'>
             <div className='content'>
                 <h1>Find your perfect Home</h1>
-                <p id='hero-text' className='search-text'> Search the largest selection of luxury high-rise apartments, multi-family homes, and luxury homes. </p>
+                <p id='hero-text' className='search-text'> Become a Wakaagent. Find your Dream home. Exclusive Properties. </p>
                 <form className='search'>
 
                     <div>
