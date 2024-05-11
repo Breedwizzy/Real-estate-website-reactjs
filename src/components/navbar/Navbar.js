@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 import wakaagentlogo from '../../assets/wakaagentlogo.jpeg';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import Link
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -27,11 +28,13 @@ const Navbar = () => {
                 </div>
 
                 <ul className={`nav-menu ${isActive ? 'active' : ''}`}>
-                    <li><a href='#' onClick={handleClick}>Home</a></li>
-                    <li><a href='#' onClick={handleClick}>Our Agents</a></li>
-                    <li><a href='#' onClick={handleClick}>Become Our Agent</a></li>
-                    <li><a href='#' onClick={handleClick}>About</a></li>
-                    <li><a href='#' onClick={handleClick}>Contact</a></li>
+                    <li><Link to="/" onClick={handleClick}>Home</Link></li>
+                    <li><Link to="/ouragents" onClick={handleClick}>Our Agents</Link></li>
+                    <li><Link to="/becomeouragent" onClick={handleClick}>Become Our Agent</Link></li>
+                    <li><Link to="/about" onClick={handleClick}>About</Link></li>
+                    <li><Link to="/contact" onClick={handleClick}>Contact</Link></li>
+                    <li><Link to="/about" onClick={handleClick}>Sign up</Link></li>
+                    <li><Link to="/contact" onClick={handleClick}>Sign in</Link></li>
                 </ul>
 
                 <div className={`hamburger ${isActive ? 'close-menu' : ''}`} onClick={toggleMenu}>

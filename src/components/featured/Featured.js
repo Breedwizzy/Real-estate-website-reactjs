@@ -27,9 +27,9 @@ const Featured = () => {
                 <img src={Bathroom} alt='' />
                 <div className='span-3 img-details'>
                     <div className='top'>
-                        <h2>123 Acme St. Dallas, TX</h2>
+                        <h2>123 Acme St. Calabar</h2>
                         <p>House for Sale</p>
-                        <p className='price'>$2,677,000</p>
+                        <p className='price'>₦2,677,000</p>
                     </div>
                     <div className='info-grid'>
                         <div>
@@ -45,7 +45,7 @@ const Featured = () => {
                                 <p className='bold'>Square Feet:</p><p>8,138</p>
                             </div>
                             <div className='info'>
-                                <p className='bold'>Est Payment:</p><p>$14,797/mo</p>
+                                <p className='bold'>Est Payment:</p><p>₦14,797/mo</p>
                             </div>
                         </div>
                     </div>
@@ -75,9 +75,9 @@ const Featured = () => {
 
                 <div className='span-3 img-details order-6'>
                     <div className='top'>
-                        <h2>123 Acme St. Dallas, TX</h2>
+                        <h2>123 Mike Lane Calabar, TX</h2>
                         <p>House for Sale</p>
-                        <p className='price'>$2,677,000</p>
+                        <p className='price'>₦2,677,000</p>
                     </div>
                     <div className='info-grid'>
                         <div>

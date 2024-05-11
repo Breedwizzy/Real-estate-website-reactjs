@@ -12,13 +12,13 @@ const Hero = () => {
                 <form className='search'>
 
                     <div>
-                        <input type='text' placeholder='Enter Keyword..' />
+                        <input type='text' placeholder=' Search for properties Using Address' />
                     </div>
                     <div className='radio'> 
-                        <input type='radio' checked />
-                        <label>Buy</label>
-                        <input type='radio'  />
-                        <label>Rent</label>
+                        {/* <input type='radio' checked /> */}
+                        {/* <label>Buy</label> */}
+                        {/* <input type='radio'  /> */}
+                        {/* <label>Rent</label> */}
                         <button type='submit'><AiOutlineSearch className='icon'/></button>
                     </div>
                 </form>
@@ -27,4 +27,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default Hero;
