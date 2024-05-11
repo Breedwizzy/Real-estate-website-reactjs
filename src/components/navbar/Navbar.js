@@ -33,8 +33,8 @@ const Navbar = () => {
                     <li><Link to="/becomeouragent" onClick={handleClick}>Become Our Agent</Link></li>
                     <li><Link to="/about" onClick={handleClick}>About</Link></li>
                     <li><Link to="/contact" onClick={handleClick}>Contact</Link></li>
-                    <li><Link to="/about" onClick={handleClick}>Sign up</Link></li>
-                    <li><Link to="/contact" onClick={handleClick}>Sign in</Link></li>
+                    <li><Link to="/becomeouragent" onClick={handleClick}>Sign up</Link></li>
+                    <li><Link to="/becomeouragent" onClick={handleClick}>Sign in</Link></li>
                 </ul>
 
                 <div className={`hamburger ${isActive ? 'close-menu' : ''}`} onClick={toggleMenu}>
